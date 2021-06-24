@@ -3,10 +3,11 @@
     margin: 0;
     padding: 0;
     background-color:blueviolet;
+    color:black;
 }
 
 .whole{
-    height:100vh;
+    height:92vh;
     width:100vw;
 
 }
@@ -29,4 +30,8 @@
     padding: 2px 10px;
     cursor: pointer;
 
+}
+a{
+    text-decoration: none;
+    
 }

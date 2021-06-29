@@ -50,7 +50,11 @@ function GetCssSheet(num) {
         //     document.getElementById('para').style.visibility = "visible";
         //     },3000);
 
+
+
         // About Page
+
+
         document.querySelector("#about h1").innerHTML ="A B O U T";
 
         // Creating animate on scroll 
@@ -94,8 +98,16 @@ function GetCssSheet(num) {
         `</div>`;
         document.querySelector("#about div").insertAdjacentHTML("beforeend",divs);
 
+        // Portfolio section  
+
+        document.querySelector("#portfolio h1").innerHTML ="P O R T F O L I O";
+        
 
 
+        // Contact section 
+
+        document.querySelector("#contact h1").innerHTML ="C O N T A C T";
+        
     }
     else {
         document.getElementById('css_sheet').setAttribute('href', `${num}.css`);

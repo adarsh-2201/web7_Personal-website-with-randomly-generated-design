@@ -50,9 +50,49 @@ function GetCssSheet(num) {
         //     document.getElementById('para').style.visibility = "visible";
         //     },3000);
 
-        // About 
-        document.querySelector("#about h1").innerHTML ="ABOUT";
+        // About Page
+        document.querySelector("#about h1").innerHTML ="A B O U T";
 
+        // Creating animate on scroll 
+        // document.getElementsByTagName("script")[0].insertAdjacentHTML("afterend",`<script src="https://unpkg.com/aos@next/dist/aos.js">AOS.init()</script>`);
+        // document.querySelector("#about h1").setAttribute("data-aos","fade-left");
+        const div_about=document.createElement("div");
+        div_about.setAttribute("id","abt_main");
+        document.querySelector("#about").appendChild(div_about);
+        const divs=`<div class="abt_div" id="box1">`+
+        `<img src="./style/home.png">`+
+        `<div class="img_overlay">`+
+        `<div class="img_title">From`+
+        `</div>`+
+        `<p class="img_para">Rajkot, Gujarat</p>`+
+        `<p class="img_para">ICSE</p>`+
+        `<p class="img_para">27-Nov</p>`+
+        `</div>`+
+        `</img>`+
+        `</div>`+
+        `<div class="abt_div" id="box2">`+
+        `<img src="./style/study.png">`+
+        `<div class="img_overlay">`+
+        `<div class="img_title">B.Tech '24`+
+        `</div>`+
+        `<p class="img_para">Electrical Enginnering</p>`+
+        `<p class="img_para">from</p>`+
+        `<p class="img_para">IIT Indore</p>`+
+        `</div>`+
+        `</img>`+
+        `</div>`+
+        `<div class="abt_div" id="box3">`+
+        `<img src="./style/interests.png">`+
+        `<div class="img_overlay">`+
+        `<div class="img_title">Interests`+
+        `</div>`+
+        `<p class="img_para">Web Developement</p>`+
+        `<p class="img_para">Designing</p>`+
+        `<p class="img_para">Competitive Programming</p>`+
+        `</div>`+
+        `</img>`+
+        `</div>`;
+        document.querySelector("#about div").insertAdjacentHTML("beforeend",divs);
 
 
 

@@ -107,7 +107,54 @@ function GetCssSheet(num) {
         // Contact section 
 
         document.querySelector("#contact h1").innerHTML ="C O N T A C T";
-        
+        const div_cont=document.createElement("div");
+        div_cont.setAttribute("id","cont_main");
+        document.querySelector("#contact").appendChild(div_cont);
+        const contdivs=`<div class="phone">`+
+        `<img src="./style/phone.png"></img>`+
+        `<div class="phone_overlay">`+
+        `<a class="app" id="app1" href="https://github.com/Dev-Daftari" target="_blank">`+
+        `<img src="./style/github.png" class="img1"></img>GitHub`+
+        `</a>`+
+        `<a class="app" id="app2" href="https://www.instagram.com/devdaftari/" target="_blank">`+
+        `<img src="./style/instagram.png" class="img2"></img>Instagram`+
+        `</a>`+
+        `<a class="app" id="app3" href="https://in.linkedin.com/in/dev-daftari-50a358206" target="_blank">`+
+        `<img src="./style/linkedin.png" class="img3"></img>LinkedIn`+
+        `</a>`+
+        `<a class="app" id="app4" href="https://mail.google.com" target="_blank">`+
+        `<img src="./style/mail.png" class="img4"></img>me@gmail`+
+        `</a>`+
+        `<a class="app" id="app5" href="">`+
+        `<img src="./style/call.png" class="img5"></img>98765 43210`+
+        `</a>`+
+        `</div>`+
+        `</div>`+
+        `<div class="formdiv">`+
+        `<img src="./style/ipad.png"></img>`+
+        `<div class="tab_overlay">`+
+        `<div class="formtitle">Reach out to Me`+
+        `</div>`+
+        `</div>`+
+        `</div>`;
+        document.querySelector("#contact div").insertAdjacentHTML("beforeend",contdivs);
+        const form_cont=`<form action="" class="contform">`+
+        `<div>`+
+        `<input type="text" placeholder="First Name" id="first_name" required>`+
+        `<input type="text" placeholder="Last Name" id="last_name">`+
+        `</div>`+
+        `<div>`+
+        `<input type="email" placeholder="Enter Your E-mail" id="email" required>`+
+        `</div>`+
+        `<div>`+
+        `<textarea name="text" id="formtxt" cols="30" rows="10" placeholder="Enter your thoughts"></textarea>`+
+        `</div>`+
+        `<div id="lstfrm">`+
+        `<button type="submit" id="subbtn">Submit</button>`+
+        `<button type="reset" id="resbtn">Reset</button>`+
+        `</div>`+
+        `</form>`;
+        document.querySelector(".formtitle").insertAdjacentHTML("beforeend",form_cont);
     }
     else {
         document.getElementById('css_sheet').setAttribute('href', `${num}.css`);

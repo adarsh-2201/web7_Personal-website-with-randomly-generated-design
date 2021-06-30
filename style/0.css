@@ -300,14 +300,14 @@ header{
     flex-direction:column;
     /* justify-content: center; */
     align-items: center;
-    height:86vh;
+    height:100vh;
 }
 
 #contact h1{
     font-family: 'Montserrat', sans-serif;
     text-align:center;
-    margin-top: 60px;
-    margin-bottom: 32px;
+    margin-top: 130px;
+    margin-bottom: 25px;
     background-color:#0088a9;
     color:#ecf0f1;
     font-size: 3.5rem;
@@ -331,6 +331,195 @@ header{
 }
 #contact h1:hover::after{
     transform: scale(1,1);
+}
+#cont_main{
+    width: 100%;
+    display:flex;
+    background-color:#0088a9;
+    /* border: 1px solid red; */
+    height: 68vh;
+    position: relative;
+    /* justify-content:space-evenly; */
+}
+.phone{
+    /* border: 1px solid blue; */
+    background-color:#0088a9;
+    width:45%;
+    height: 100%;
+    display:flex;   
+    justify-content: center;
+    align-items: center;
+    margin-right:-125px;
+}
+.phone img{
+    /* width: 100%; */
+    background-color: #0088a9;
+    height: 100%;
+}
+.phone_overlay{
+    /* border: 2px solid purple; */
+    background-color: #202020;
+    top: 0;
+    left: 0;
+    width: 12.75%;
+    height: 83%;
+    margin-top: 53px;
+    margin-left: 212.1px;
+    position: absolute;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    /* z-index: 1; */
+}
+.app{
+    /* border:2px solid olivedrab; */
+    width:90%;
+    border-radius:15px;
+    height:50px;
+    margin: 10px 20px;
+    /* padding: 10px 20px; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    background-color: #353535;
+    transition: all 0.3s ease;
+    font-size:1.1rem;
+    text-decoration: none;
+    text-align: center;
+}
+.app:hover{
+    box-shadow: 0 0 12px 0 rgb(255 255 255 / 90%);
+    color: #0088a9;
+    font-weight: bold;
+    font-size:1.25rem;
+}
+
+#app1 img{
+    background-color:#353535;
+    height:70%;
+    margin-left: 15px;
+    margin-right: 20px;
+}
+#app2 img{
+    background-color:#353535;
+    height:60%;
+    margin-left: 15px;
+    margin-right: 17px;
+}
+#app3 img{
+    background-color:#353535;
+    height:60%;
+    margin-left: 17px;
+    margin-right: 20px;
+    margin-bottom: 6px;
+}
+#app4 img{
+    background-color:#353535;
+    height:75%;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+#app5 img{
+    background-color:#353535;
+    height:85%;
+    margin-left: 11px;
+    margin-right: 4px;
+}
+.app:hover .img1{
+    height:100%;
+}
+/* #app1 img:hover{
+    height:90%;
+} */
+.formdiv{
+    /* border: 1px solid blue; */
+    background-color:#0088a9;
+    width:75%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.formdiv img{
+    /* width:100%; */
+    height:100%;
+    background-color:#0088a9;
+    /* border: 2px solid red; */
+}
+.tab_overlay{
+    background-color: #202020;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    top: 5.5vh;
+    left: 47.75vw;
+    width: 36.3%;
+    height: 84%;
+    border-radius: 10px;
+    /* border: 2px solid blue; */
+    position: absolute;
+}
+.formtitle{
+    background-color:#202020;
+    width:100%;
+    text-align: center;
+    font-size:30px;
+    font-weight:bold;
+    margin-top:20px;
+}
+.contform div input{
+    border-radius:20px;
+    margin:10px;
+    color:#ecf0f1;
+    background-color:#353535;
+    width: 43%;
+    /* border: 1px solid red; */
+    text-align:center;
+    height:38px;
+    transition:all 0.3s ease;
+}
+.contform div input:focus, #formtxt:focus, #subbtn:focus, #resbtn:focus{
+    outline:none;
+    border:3px solid #0088a9;
+}
+.contform div input:hover, #formtxt:hover, #subbtn:hover, #resbtn:hover{
+    border: 3px solid #0088a9;
+}
+.contform div{
+    background-color:#202020;
+}
+
+#email{
+    width: 91%;
+}
+#formtxt{
+    border-radius:20px;
+    transition:all 0.3s ease;
+    /* margin:18px 15px; */
+    margin:10px;
+    color:#ecf0f1;
+    padding: 15px;
+    width: 91%;
+    /* border: 1px solid red; */
+    text-align:center;
+    background-color:#353535; 
+}
+#lstfrm{
+    margin-top: -16px;
+}
+#subbtn,#resbtn{
+    transition:all 0.3s ease;
+    font-size:18px;
+    cursor:pointer;
+    border-radius:20px;
+    padding: 10px 50px;
+    /* background-color:#0088a9;
+    border: 2px solid #ecf0f1; */
+    margin: 15px 15px;
 }
 
 

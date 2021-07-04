@@ -5,13 +5,37 @@
     box-sizing: border-box;
     margin: 0;
     padding:0;
-    background-color: #272727;
+    /* background-color: #272727; */
     color: #ecf0f1; 
     font-family: 'Josefin Sans', sans-serif; 
 }
 
 html{
     scroll-behavior: smooth;
+}
+
+
+
+/* scroll to top  */
+#scrolltotop{
+    position:fixed;
+    right: 10px;
+    bottom: 20px;
+    height:50px;
+    width:50px;
+    border-radius:50%;
+    border:none;
+    background-color: #272727;
+    z-index: 10;
+    /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); */
+    cursor:pointer;
+    visibility:hidden;
+    opacity: 0;
+    transition:0.3s ease; 
+}
+#scrolltotop.active{
+    visibility:visible;
+    opacity:1;
 }
 
 /* NAVBAR */
@@ -25,6 +49,7 @@ header{
     z-index: 9999;
     top:0;
     width:100%;
+    background-color: #272727;
 }
 
 .navbar{
@@ -184,7 +209,7 @@ header{
     width:23%;
     position: relative;
     display:flex;
-    /* background-color:#0088a9; */
+    background-color:#272727;
     /* padding:10px 4px; */
     border-radius: 30px;
     overflow:hidden;
@@ -262,8 +287,8 @@ header{
 #portfolio h1{
     font-family: 'Montserrat', sans-serif;
     text-align:center;
-    margin-top: 60px;
-    margin-bottom: 32px;
+    margin-top: 40px;
+    margin-bottom: 16px;
     background-color:#0088a9;
     color:#ecf0f1;
     font-size: 3.5rem;
@@ -288,6 +313,123 @@ header{
 #portfolio h1:hover::after{
     transform: scale(1,1);
 }
+
+
+
+
+
+.slider{
+    width: 1000px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+  }
+  
+  .slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 2s;
+  }
+  
+  .slide img{
+    width: 1000px;
+    height: 500px;
+  }
+  
+  /*css for manual slide navigation*/
+  
+  .navigation-manual{
+    position: absolute;
+    width: 1000px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn{
+    border: 2px solid #0088a9;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  .manual-btn:hover{
+    background: #0088a9;
+  }
+  
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+  
+  /*css for automatic navigation*/
+  
+  .navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 1000px;
+    justify-content: center;
+    margin-top: 460px;
+  }
+  
+  .navigation-auto div{
+    border: 2px solid #0088a9;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #0088a9;
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #0088a9;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #0088a9;
+  }
+  
+  #radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #0088a9;
+  }
+        
+
+
+
+
+
+
 
 
 /* Contact  */
@@ -481,6 +623,7 @@ header{
     text-align:center;
     height:38px;
     transition:all 0.3s ease;
+    border:none;
 }
 .contform div input:focus, #formtxt:focus, #subbtn:focus, #resbtn:focus{
     outline:none;
@@ -507,11 +650,14 @@ header{
     /* border: 1px solid red; */
     text-align:center;
     background-color:#353535; 
+    border:none;
 }
 #lstfrm{
     margin-top: -16px;
 }
 #subbtn,#resbtn{
+    border:none;
+    background-color:#353535; 
     transition:all 0.3s ease;
     font-size:18px;
     cursor:pointer;
@@ -570,6 +716,7 @@ header{
 
 footer{
     text-align:center;
+    background-color:#272727;   
 }
 
 

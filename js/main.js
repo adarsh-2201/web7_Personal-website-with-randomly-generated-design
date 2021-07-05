@@ -10,8 +10,8 @@ function GetCssSheet(num) {
     const container = document.getElementsByClassName("container")[0];
     const heading = document.getElementById("heading");
 
-    const iconlink=`<link rel="icon" href="./style/icon1.png" type="image/icon type">`;
-    document.getElementById("css_sheet").insertAdjacentHTML("afterend",iconlink);
+    const iconlink = `<link rel="icon" href="./style/icon1.png" type="image/icon type">`;
+    document.getElementById("css_sheet").insertAdjacentHTML("afterend", iconlink);
 
 
     // Person name set
@@ -180,8 +180,70 @@ function GetCssSheet(num) {
       })
     })
 
-    const googlink=`<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">`;
+    const googlink = `<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">`;
     document.getElementById("css_sheet").insertAdjacentHTML("afterend", googlink);
+
+
+
+
+    // MAKING COLOR PICKER 
+
+
+    const codeclr = `<div class="colorpick">
+    <div class="picker">
+        <div id="col1" class="cols"></div>
+        <div id="col2" class="cols"></div>
+        <div id="col3" class="cols"></div>
+        <div id="col4" class="cols"></div>
+    </div>
+    <div class="clicker"><img src="./style/color.png"></img></div>
+</div>`;
+    document.querySelector(".whole").insertAdjacentHTML("afterbegin", codeclr);
+    const whole=document.querySelector(".whole");
+    const col = document.querySelector(".clicker");
+    const pick = document.querySelector(".picker");
+    col.addEventListener("click", function () {
+    
+      if (pick.style.display === "none") {
+        pick.style.display = "block";
+      }
+      else {
+        pick.style.display = "none";
+      }
+    })
+
+    const blue = document.querySelector("#col1");
+    blue.addEventListener("click", function () {
+      let r = document.querySelector(":root");
+      r.style.setProperty("--theme-color", "#0088a9");
+    })
+
+    const red = document.querySelector("#col2");
+    red.addEventListener("click", function () {
+      let r = document.querySelector(":root");
+      r.style.setProperty("--theme-color", "#fd3d3d");
+    })
+
+    const green = document.querySelector("#col3");
+    green.addEventListener("click", function () {
+      let r = document.querySelector(":root");
+      r.style.setProperty("--theme-color", "#10a502");
+    })
+
+    const purple = document.querySelector("#col4");
+    purple.addEventListener("click", function () {
+      let r = document.querySelector(":root");
+      r.style.setProperty("--theme-color", "#a121b8");
+    })
+
+
+    //   var toggleVisibility = function(element) {
+    //     if(element.style.display=='visible'){
+    //         element.style.display='none';
+    //     } else {
+    //         element.style.display='visible';
+    //     }
+    // };
 
 
 

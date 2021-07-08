@@ -6,6 +6,8 @@ const num = 0;
 function GetCssSheet(num) {
   if (num === 0) {
     document.getElementById('css_sheet').setAttribute('href', `./style/${num}.css`);
+    const medialink = `<link href="./style/media1.css" rel="stylesheet">`;
+    document.getElementById("css_sheet").insertAdjacentHTML("afterend", medialink);
     const name = "Dev Daftari";
     const container = document.getElementsByClassName("container")[0];
     const heading = document.getElementById("heading");
@@ -34,6 +36,7 @@ function GetCssSheet(num) {
     // Creating a div containing the profile picture of the person 
 
     const division = document.createElement("div");
+    division.setAttribute("id","imgdiv")
     const image = document.createElement("img");
     image.setAttribute("src", "./style/icon2.png");
     division.appendChild(image);
@@ -151,7 +154,7 @@ function GetCssSheet(num) {
       `<input type="email" placeholder="Enter Your E-mail" id="email" required>` +
       `</div>` +
       `<div>` +
-      `<textarea name="text" id="formtxt" cols="30" rows="10" placeholder="Enter your thoughts"></textarea>` +
+      `<textarea name="text" id="formtxt" placeholder="Enter your thoughts"></textarea>` +
       `</div>` +
       `<div id="lstfrm">` +
       `<button type="submit" id="subbtn">Submit</button>` +
@@ -205,10 +208,10 @@ function GetCssSheet(num) {
     col.addEventListener("click", function () {
     
       if (pick.style.display === "none") {
-        pick.style.display = "block";
+          pick.style.display = "block";
       }
       else {
-        pick.style.display = "none";
+          pick.style.display = "none";  
       }
     })
 

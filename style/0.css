@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap'); */
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -244,6 +247,7 @@ header{
 
 #about h1{
     font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     text-align:center;
     margin-top: 60px;
     margin-bottom: 32px;

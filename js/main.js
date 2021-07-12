@@ -5,14 +5,14 @@ const num = 0;
 
 function GetCssSheet(num) {
   if (num === 0) {
-    document.getElementById('css_sheet').setAttribute('href', `./style/${num}.css`);
-    const medialink = `<link href="./style/media1.css" rel="stylesheet">`;
+    document.getElementById('css_sheet').setAttribute('href', `./style/${num}/${num}.css`);
+    const medialink = `<link href="./style/0/media0.css" rel="stylesheet">`;
     document.getElementById("css_sheet").insertAdjacentHTML("afterend", medialink);
     const name = "Dev Daftari";
     const container = document.getElementsByClassName("container")[0];
     const heading = document.getElementById("heading");
 
-    const iconlink = `<link rel="icon" href="./style/icon1.png" type="image/icon type">`;
+    const iconlink = `<link rel="icon" href="./style/0/icon1.png" type="image/icon type">`;
     document.getElementById("css_sheet").insertAdjacentHTML("afterend", iconlink);
 
 
@@ -36,9 +36,9 @@ function GetCssSheet(num) {
     // Creating a div containing the profile picture of the person 
 
     const division = document.createElement("div");
-    division.setAttribute("id","imgdiv")
+    division.setAttribute("id", "imgdiv")
     const image = document.createElement("img");
-    image.setAttribute("src", "./style/icon2.png");
+    image.setAttribute("src", "./style/0/icon2.png");
     division.appendChild(image);
     container.appendChild(division);
 
@@ -71,7 +71,7 @@ function GetCssSheet(num) {
     div_about.setAttribute("id", "abt_main");
     document.querySelector("#about").appendChild(div_about);
     const divs = `<div class="abt_div" id="box1">` +
-      `<img src="./style/home.png">` +
+      `<img src="./style/0/home.png">` +
       `<div class="img_overlay">` +
       `<div class="img_title">From` +
       `</div>` +
@@ -82,7 +82,7 @@ function GetCssSheet(num) {
       `</img>` +
       `</div>` +
       `<div class="abt_div" id="box2">` +
-      `<img src="./style/study.png">` +
+      `<img src="./style/0/study.png">` +
       `<div class="img_overlay">` +
       `<div class="img_title">B.Tech '24` +
       `</div>` +
@@ -93,7 +93,7 @@ function GetCssSheet(num) {
       `</img>` +
       `</div>` +
       `<div class="abt_div" id="box3">` +
-      `<img src="./style/interests.png">` +
+      `<img src="./style/0/interests.png">` +
       `<div class="img_overlay">` +
       `<div class="img_title">Interests` +
       `</div>` +
@@ -118,27 +118,27 @@ function GetCssSheet(num) {
     div_cont.setAttribute("id", "cont_main");
     document.querySelector("#contact").appendChild(div_cont);
     const contdivs = `<div class="phone">` +
-      `<img src="./style/phone.png"></img>` +
+      `<img src="./style/0/phone.png"></img>` +
       `<div class="phone_overlay">` +
       `<a class="app" id="app1" href="https://github.com/Dev-Daftari" target="_blank">` +
-      `<img src="./style/github.png" class="img1"></img>GitHub` +
+      `<img src="./style/0/github.png" class="img1"></img>GitHub` +
       `</a>` +
       `<a class="app" id="app2" href="https://www.instagram.com/devdaftari/" target="_blank">` +
-      `<img src="./style/instagram.png" class="img2"></img>Instagram` +
+      `<img src="./style/0/instagram.png" class="img2"></img>Instagram` +
       `</a>` +
       `<a class="app" id="app3" href="https://in.linkedin.com/in/dev-daftari-50a358206" target="_blank">` +
-      `<img src="./style/linkedin.png" class="img3"></img>LinkedIn` +
+      `<img src="./style/0/linkedin.png" class="img3"></img>LinkedIn` +
       `</a>` +
       `<a class="app" id="app4" href="https://mail.google.com" target="_blank">` +
-      `<img src="./style/mail.png" class="img4"></img>me@gmail` +
+      `<img src="./style/0/mail.png" class="img4"></img>me@gmail` +
       `</a>` +
       `<a class="app" id="app5" href="">` +
-      `<img src="./style/call.png" class="img5"></img>98765 43210` +
+      `<img src="./style/0/call.png" class="img5"></img>98765 43210` +
       `</a>` +
       `</div>` +
       `</div>` +
       `<div class="formdiv">` +
-      `<img src="./style/ipad.png"></img>` +
+      `<img src="./style/0/ipad.png"></img>` +
       `<div class="tab_overlay">` +
       `<div class="formtitle">Reach out to Me` +
       `</div>` +
@@ -199,19 +199,19 @@ function GetCssSheet(num) {
         <div id="col3" class="cols"></div>
         <div id="col4" class="cols"></div>
     </div>
-    <div class="clicker"><img src="./style/color.png"></img></div>
+    <div class="clicker"><img src="./style/0/color.png"></img></div>
 </div>`;
     document.querySelector(".whole").insertAdjacentHTML("afterbegin", codeclr);
-    const whole=document.querySelector(".whole");
+    const whole = document.querySelector(".whole");
     const col = document.querySelector(".clicker");
     const pick = document.querySelector(".picker");
     col.addEventListener("click", function () {
-    
+
       if (pick.style.display === "none") {
-          pick.style.display = "block";
+        pick.style.display = "block";
       }
       else {
-          pick.style.display = "none";  
+        pick.style.display = "none";
       }
     })
 
@@ -262,16 +262,16 @@ function GetCssSheet(num) {
               <!--radio buttons end-->
               <!--slide images start-->
               <div class="slide first">
-                <img src="./style/1.jpg" alt="">
+                <img src="./style/0/1.jpg" alt="">
               </div>
               <div class="slide">
-                <img src="./style/2.jpg" alt="">
+                <img src="./style/0/2.jpg" alt="">
               </div>
               <div class="slide">
-                <img src="./style/3.jpg" alt="">
+                <img src="./style/0/3.jpg" alt="">
               </div>
               <div class="slide">
-                <img src="./style/4.jpg" alt="">
+                <img src="./style/0/4.jpg" alt="">
               </div>
               <!--slide images end-->
               <!--automatic navigation start-->
@@ -306,6 +306,9 @@ function GetCssSheet(num) {
     }, 5000);
 
 
+  }
+  else if (num === 1) {
+    
   }
   else {
     document.getElementById('css_sheet').setAttribute('href', `${num}.css`);

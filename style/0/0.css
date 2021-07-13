@@ -392,7 +392,9 @@ header{
     transform: scale(1,1);
 }
 
-
+.gal{
+    display: none;
+}
 
 /* Making Carousel */
 
@@ -401,6 +403,7 @@ header{
     height: 70vh;      /*original height:500px */
     border-radius: 10px;
     overflow: hidden;
+    /* display: none; */
   }
   
   .slides{
@@ -712,6 +715,9 @@ header{
 #email{
     width: 91%;
 }
+/* ::placeholder{
+    color:#ecf0f1;
+} */
 #formtxt{
     border-radius:20px;
     transition:all 0.3s ease;

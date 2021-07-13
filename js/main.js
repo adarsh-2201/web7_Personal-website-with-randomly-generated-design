@@ -1,7 +1,7 @@
-// const num= Math.floor(Math.random()*4);
+const num= Math.floor(Math.random()*4);
 
 // document.getElementById('css_sheet').setAttribute('href',`${num}.css`);
-const num = 0;
+// const num = 0;
 
 function GetCssSheet(num) {
   if (num === 0) {
@@ -250,9 +250,15 @@ function GetCssSheet(num) {
     // };
 
 
-
     // Slider
+    const gal=`<div class="gal">
+    <div class="galitems" id="galitem1"><img src="./style/0/1.jpg" alt=""></img></div>
+    <div class="galitems" id="galitem2"><img src="./style/0/2.jpg" alt=""></img></div>
+    <div class="galitems" id="galitem3"><img src="./style/0/3.jpg" alt=""></img></div>
+    <div class="galitems" id="galitem4"><img src="./style/0/4.jpg" alt=""></img></div>
+</div>`;
     const slid = `<!--image slider start-->
+      <div class="wrap">
         <div class="slider">
             <div class="slides">
               <!--radio buttons start-->
@@ -293,9 +299,50 @@ function GetCssSheet(num) {
             </div>
             <!--manual navigation end-->
           </div>
+          </div>
           <!--image slider end-->`;
 
+    document.querySelector("#portfolio h1").insertAdjacentHTML("afterend", gal);
     document.querySelector("#portfolio h1").insertAdjacentHTML("afterend", slid);
+
+    // Gallery
+    const galdiv=`<div class="galoverlay"></div>`;
+    document.querySelector("#portfolio h1").insertAdjacentHTML("afterend", galdiv);
+    const galover=document.querySelector(".galoverlay");
+
+    let seeimg1= document.querySelectorAll(".galitems img")[0];
+    let img1=`<img src="./style/0/1.jpg" alt="">`;
+    seeimg1.addEventListener("click", function (){
+      galover.insertAdjacentHTML("afterbegin",img1);
+      galover.style.visibility="visible";
+    })
+
+    let seeimg2= document.querySelectorAll(".galitems img")[1];
+    let img2=`<img src="./style/0/2.jpg" alt="">`;
+    seeimg2.addEventListener("click", function (){
+      galover.insertAdjacentHTML("afterbegin",img2);
+      galover.style.visibility="visible";
+    })
+
+    let seeimg3= document.querySelectorAll(".galitems img")[2];
+    let img3=`<img src="./style/0/3.jpg" alt="">`;
+    seeimg3.addEventListener("click", function (){
+      galover.insertAdjacentHTML("afterbegin",img3);
+      galover.style.visibility="visible";
+    })
+
+    let seeimg4= document.querySelectorAll(".galitems img")[3];
+    let img4=`<img src="./style/0/4.jpg" alt="">`;
+    seeimg4.addEventListener("click", function (){
+      galover.insertAdjacentHTML("afterbegin",img4);
+      galover.style.visibility="visible";
+    })
+
+    galover.addEventListener("click", function (){
+        galover.style.visibility="hidden";
+        document.querySelector(".galoverlay img").remove();
+    })
+
 
     var counter = 1;
     setInterval(function () {
@@ -307,8 +354,10 @@ function GetCssSheet(num) {
     }, 5000);
 
 
+
   }
   else if (num === 1) {
+
     document.getElementsByTagName("title")[0].innerHTML = `Ashish Agrawal - Personal Website`;
     document.getElementById('css_sheet').setAttribute('href', `./style/${num}/${num}.css`);
     const headlink = `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
@@ -602,8 +651,11 @@ function GetCssSheet(num) {
       });
     });
   }
-  else {
-    document.getElementById('css_sheet').setAttribute('href', `${num}.css`);
+  else if(num===2){
+    document.getElementById('css_sheet').setAttribute('href', `./style/${num}/${num}.css`);
+  }
+  else if(num===3){
+    document.getElementById('css_sheet').setAttribute('href', `./style/${num}/${num}.css`);
   }
 
 }

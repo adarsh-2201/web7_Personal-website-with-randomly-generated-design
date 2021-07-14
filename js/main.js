@@ -653,6 +653,230 @@ function GetCssSheet(num) {
   }
   else if(num===2){
     document.getElementById('css_sheet').setAttribute('href', `./style/${num}/${num}.css`);
+    document.getElementsByTagName("title")[0].innerHTML = `Atharva Tayshete's Personal Website`;
+    const hdrlink=`<link rel="icon" href="./style/2/A.webp" type="image/icon type">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>`;
+
+    document.getElementById("css_sheet").insertAdjacentHTML("afterend", hdrlink);
+
+    const bdycnt= `<div class="site-main-wrapper">
+    <button class="hamberger">
+        <img src="./style/2/hamberger.svg" alt="">
+    </button>
+    <div class="mobile-nav">
+        <button class="times">
+            <img src="./style/2/times.svg" alt="">
+        </button>
+        <ul>
+            <li>
+                <a href="#Home">Home</a>
+                <br>
+                <a href="#about">About</a>
+                <br>
+                <a href="#Portfolio">Portfolio</a>
+                <br>
+                <a href="#Contact">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+    <header id="sticky">
+        <div class="container">
+            <nav class="flex items-center justify-between" id="main-nav">
+                <div class="left flex items-center">
+                    <div class="branding">
+                        <!-- <img src="./style/2/logo.svg" alt=""> -->
+                        <a href="#" style="text-transform: none;">AT's Personal Website</a>
+                    </div>
+                    <div>
+                        <a href="#Home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#Portfolio">Portfolio</a>
+                        <!-- <a href="#">Portfolio</a>
+                        <a href="#">Portfolio</a> -->
+                    </div>
+                </div>
+                <div class="right">
+                    <a class="btn btn-primary" href="#Contact">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="Home" id="Home">
+        <div class="hero items-center justify-between">
+            <div class="left justify-center">
+                <img src="./style/2/icon2.png" alt="">
+            </div>
+            <div class="right ">
+                <h6>Atharva Tayshete</h6>
+                <h1>Hi I'm a <span>Web developer</span></h1>
+                <p>I am Atharva, 18 ,currently studying in IIT Indore for my B.Tech in Electrical Engineering(currently entering 2nd year). Currently I am beginning my journey in this field of web design and programming and hopeful of doing more projects in future. As of now, I have completed my basics in front end web development.
+                <br><br>
+                Till the end of my 2nd year,I aim to learn Arduino,complete front & back end programming and start Competitive Programming as well. For more details about my academics, you may download my CV from the link below.
+                </p>
+                <div>
+                    <button class="btn btn-secondary"><a href="https://drive.google.com" target="_blank"
+                            style="text-decoration: none;color: var(--dark);">Download My CV</a></button>
+                </div>
+                <br>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="container items-center">
+            <!-- <div class="flex-1">
+                <img class="about-me-img" src="./style/2/icon2.png" alt="">
+            </div> -->
+            <div class="flex-1">
+                <h1>
+                    About <span style="color: var(--primary);">Me</span>
+                </h1>
+                <h3>Hi I'm Atharva Tayshete</h3>
+                <p>
+                    I was born on 13th December 2002. Born and brought up in Ratnagiri,a town in Maharashtra. I shifted to Mumbai after passing 10th,with 96.6%, for my further studies. I passed my 12th with 92% and further landed in IIT Indore,Electrical Branch by virtue of AIR 2799 in Jee(Adv) 2020. <br>
+                    I am able to speak 3 languages fluently so far viz. English,Marathi,Hindi with expecting to add some more in the future. Apart from that,I have qualified PRMO twice-in 2018 & 2019 and excelled with a AIR 2359 in JEE(Main) 2020.
+                </p>
+                <div class="social">
+                    <a href="https://in.linkedin.com/in/atharva-tayshete-028622169" target="_blank"><img
+                            src="./style/2/iconmonstr-linkedin-3.svg" alt=""></a>
+                    <a href="https://twitter.com" target="_blank" style="z-index: 2;"><img src="./style/2/iconmonstr-twitter-1.svg"
+                            alt=""></a>
+                    <a href="https://facebook.com" target="_blank"><img src="./style/2/iconmonstr-facebook-6.svg"
+                            alt=""></a>
+                    <a href="https://instagram.com" target="_blank"><img src="./style/2/iconmonstr-instagram-11.svg"
+                            alt=""></a>
+                    <a href="https://pinterest.com" target="_blank"><img src="./style/2/iconmonstr-pinterest-1.svg"
+                            alt=""></a>
+                    <a href="#"><img src="./style/2/lettera.svg" alt=""></a>
+                    <a href="https://github.com/atharvact02" target="_blank"><img
+                            src="./style/2/iconmonstr-github-1.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services" id="Portfolio">
+        <div class="container">
+            <h1 class="section-heading" id="pure">My <span>Portfolio</span></h1>
+            <p>Projects done by me</p>
+            <div class="card-wrapper">
+                <div class="card">
+                    <h2>Graphic Design</h2>
+                    <img src="./style/2/gd1.png" alt="">
+                </div>
+                <div class="card">
+                    <h2>Web Design</h2>
+                    <img src="./style/2/wd3.jpg" alt="">
+                </div>
+                <div class="card">
+                    <h2>GPS Tracking</h2>
+                    <img src="./style/2/tobias-rademacher-p79nyt2CUj4-unsplash.jpg" alt="">
+                </div>
+                <div class="card">
+                    <h2>Android App</h2>
+                    <img src="./style/2/aa1.jpg" alt="">
+                </div>
+                <div class="card">
+                    <h2>LMS</h2>
+                    <img src="./style/2/lms1.png" alt="">
+                </div>
+                <div class="card">
+                    <h2>Chat bot</h2>
+                    <img src="./style/2/cb1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="Contact">
+        <div class="container">
+            <h1 class="section-heading">Contact <span>Us</span></h1>
+            <p>I am hopeful of working in a few more freelance projects.</p>
+            <div class="card-wrapper">
+                <div class="cards">
+                    <img src="./style/2/iconmonstr-phone-10.svg" alt="">
+                    <h1>Call us on</h1>
+                    <h6>+91 9876543210</h6>
+                </div>
+                <div class="cards">
+                    <img src="./style/2/iconmonstr-gmail-1.svg" alt="">
+                    <h1>Message me at</h1>
+                    <h6>eexx000y0zz@iiti.ac.in</h6>
+                </div>
+                <div class="cards">
+                    <img src="./style/2/iconmonstr-map-thin.svg" alt="">
+                    <h1>Find me in</h1>
+                    <h6>IIT Indore,MP,India</h6>
+                </div>
+            </div>
+            <form action="">
+                <div class="input-wrap">
+                    <input type="text" placeholder="Your Name..">
+                    <input type="text" placeholder="Your E-mail..">
+                </div>
+                <div class="input-wrap-2">
+                    <input type="text" placeholder="Your Subject..">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message.."></textarea>
+                </div>
+                <br>
+                <div>
+                    <button class="btn btn-primary">Send Message</button>
+                </div>
+                <br>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-logo">
+            <a href="#"> AT's Personal Website </a>
+        </div>
+        <!-- <div class="footer-socials">
+            <a href="https://in.linkedin.com/in/atharva-tayshete-028622169" target="_blank"><img src="./style/2/iconmonstr-linkedin-3.svg" alt=""></a>
+            <a href="https://twitter.com" target="_blank"><img src="./style/2/iconmonstr-twitter-1.svg" alt=""></a>
+            <a href="https://facebook.com" target="_blank"><img src="./style/2/iconmonstr-facebook-6.svg" alt=""></a>
+            <a href="https://instagram.com" target="_blank"><img src="./style/2/iconmonstr-instagram-11.svg" alt=""></a>
+            <a href="https://pinterest.com" target="_blank"><img src="./style/2/iconmonstr-pinterest-1.svg" alt=""></a>
+            <a href="#"><img src="./style/2/lettera.svg" alt=""></a>
+            <a href="https://github.com/atharvact02" target="_blank"><img src="./style/2/iconmonstr-github-1.svg" alt=""></a>
+        </div> -->
+        <div class="copyright">
+            &copy; 2021- Atharva T. All rights reserved
+        </div>
+    </footer>`;
+
+
+    document.getElementById("home").insertAdjacentHTML("afterbegin", bdycnt);
+    document.querySelectorAll(".navbar")[0].remove();
+    document.querySelector(".whole").remove();
+    document.querySelector("#footer").remove();
+
+    // $(document).ready(function() {
+
+    //     let hamberger = document.querySelector('.hamberger');
+    //     let times = document.querySelector('.times');
+    //     let mobileNav = document.querySelector('.mobile-nav');
+
+    //     hamberger = addEventListener('click', function () {
+    //         mobileNav.classList.add('open');
+    //     });
+    //     times = addEventListener('click', function () {
+    //         mobileNav.classList.remove('open');
+    //     });
+    // });
+    $(document).ready(function(){  
+      let hamberger = document.querySelector('.hamberger');
+      let times = document.querySelector('.times');
+      let mobileNav = document.querySelector('.mobile-nav');
+      
+      hamberger.addEventListener('click', function(){
+        mobileNav.classList.add('open');  
+      });
+      
+      times.addEventListener('click', function(){
+          mobileNav.classList.remove('open');  
+      });
+      
+      });
   }
   else if(num===3){
     document.getElementById('css_sheet').setAttribute('href', `./style/${num}/${num}.css`);

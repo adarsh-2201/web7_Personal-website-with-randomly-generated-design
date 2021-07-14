@@ -92,6 +92,7 @@ html{
 }
 #col3{
     background-color:#10a502;
+    /* background-color:#0a7900; */
 }
 #col4{
     background-color: #a121b8;
@@ -432,7 +433,7 @@ header{
   .navigation-manual{
     position: absolute;
     width: 80vw;
-    margin-top: -40px;
+    margin-top: -5.5vh;  /*-40px*/
     display: flex;
     justify-content: center;
   }
@@ -476,7 +477,8 @@ header{
     display: flex;
     width: 80vw;
     justify-content: center;
-    margin-top: 460px;
+    /* margin-top: 460px; */
+    margin-top: 63.75vh;
   }
   
   .navigation-auto div{

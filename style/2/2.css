@@ -144,14 +144,16 @@ section.about .about-me-img {
 }
 
 section.about h1 {
-    margin-bottom: 1rem;
-    font-size: 1.6rem;
+    margin-bottom: 3rem;
+    /* font-size: 1.6rem; */
     font-weight: 400;
+    font-size: 3rem;
+margin-top: 1rem;
 }
 
 section.about h3 {
     margin-bottom: 1rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
@@ -216,6 +218,7 @@ section.about .social a img {
 
 section.services {
     background-color: var(--dark);
+    padding-top: 7.5rem;
 }
 
 .card {
@@ -238,7 +241,11 @@ section.services .card-wrapper {
 }
 
 .card img:hover {
-    border: 0.4rem ridge var(--pure);
+   /*     border: 0.3rem ridge var(--pure); */
+    box-shadow: 0.5rem 0.5rem 0.5rem var(--primary);
+    -ms-box-shadow: 0.5rem 0.5rem 0.5rem var(--primary);
+    -moz-box-shadow: 0.5rem 0.5rem 0.5rem var(--primary);
+    -o-box-shadow: 0.5rem 0.5rem 0.5rem var(--primary);
 }
 
 section.contact .card-wrapper {
@@ -252,7 +259,7 @@ section.contact .card-wrapper .cards {
 }
 
 section.contact .card-wrapper .cards img {
-    margin-bottom: 3rem;
+    margin-bottom: 0rem;
 }
 
 section.contact .card-wrapper .cards h1 {
@@ -265,6 +272,7 @@ section.contact .card-wrapper .cards h6 {
     font-weight: 400;
     color: var(--ternary);
     /* margin-bottom: 4rem; */
+    padding-bottom: 2rem;
 }
 
 section.contact .input-wrap {
@@ -286,20 +294,24 @@ section.contact .input-wrap-2 input {
 
 section.contact input {
     padding: 0.5rem;
-    border: 1px solid var(--light);
+    border: 2px solid var(--dark);
     font-size: 0.9rem;
+    background: var(--light);
+    outline: none;
 }
 
 section.contact .input-wrap-2 textarea {
     padding: 0.5rem;
-    border: 1px solid var(--light);
+    border: 2px solid var(--dark);
     font-size: 0.9rem;
     font-family: 'Lato',sans-serif;
+    background: var(--light);
+    outline: none;
 }
 
 section.contact .input-wrap-2 textarea:focus,
 section.contact input:focus {
-    background: var(--light);
+    background: none;
     outline: none;
 }
 
@@ -311,7 +323,8 @@ section.contact .btn-wrapper {
 footer {
     background-color: var(--dark);
     text-align: center;
-    padding: 1.5rem 0;
+    padding: 0.5rem 0;
+    padding-bottom: 0;
     color: var(--pure);
 }
 
@@ -334,6 +347,8 @@ footer .copyright {
 
 #pure {
     color: var(--pure);
+    padding-bottom: 2rem;
+font-size: 3rem;
 }
 
 .Home {
@@ -466,7 +481,7 @@ site-main-wrapper {
     }
     .hero .left{
         margin-top:-6rem;
-        margin-right: -9rem;
+        /* margin-right: -9rem; */
         padding-bottom:4rem;
     }
     .about-inner-wrap{
@@ -515,9 +530,26 @@ site-main-wrapper {
 }
 
 
+#Contact {
+    padding-top: 7.5rem;
+    padding-bottom: 1rem;
+    }
+    .section-heading {
+        font-size: 3rem;
+        padding-bottom: 1.5rem;
+        }
 
-
-
+        .zoom {
+            /* padding: 50px;
+            background-color: green; */
+            transition: transform .2s; /* Animation */
+            /* width: 200px;
+            height: 200px;
+            margin: 0 auto; */
+          }
+          
+          .zoom:hover {
+            transform: scale(1.4); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */}
 
 
 
@@ -577,7 +609,7 @@ site-main-wrapper {
 }
 
 .btn-primary {
-    color: var(--secondary);
+    color: var(--pure);
     background: var(--primary);
     text-decoration: none;
 }

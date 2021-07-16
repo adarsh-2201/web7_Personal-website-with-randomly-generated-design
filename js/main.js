@@ -22,7 +22,7 @@ function GetCssSheet(num) {
 
     // Setting title
 
-    document.getElementsByTagName("title")[0].innerHTML = `${name} - Personal Website`;
+    document.getElementsByTagName("title")[0].innerHTML = `Dev Daftari's Personal Website`;
 
     // Setting footer
 
@@ -358,7 +358,7 @@ function GetCssSheet(num) {
   }
   else if (num === 1) {
 
-    document.getElementsByTagName("title")[0].innerHTML = `Ashish Agrawal - Personal Website`;
+    document.getElementsByTagName("title")[0].innerHTML = `Ashish Agrawal's Personal Website`;
     document.getElementById('css_sheet').setAttribute('href', `./style/${num}/${num}.css`);
     const headlink = `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>

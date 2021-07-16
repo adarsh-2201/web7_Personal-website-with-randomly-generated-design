@@ -880,6 +880,66 @@ function GetCssSheet(num) {
   }
   else if(num===3){
     document.getElementById('css_sheet').setAttribute('href', `./style/${num}/${num}.css`);
+    document.getElementsByTagName("title")[0].innerHTML = `Avaneesh Pandey's Personal Website`;
+    const headlnk=`<script src="https://kit.fontawesome.com/a076d05399.js"></script>`;
+    document.getElementById("css_sheet").insertAdjacentHTML("afterend", headlnk);
+
+    const bdycontain=`<header>
+    <nav class="navbar">
+        <div>
+            <p id="logo">Avaneesh</p>
+        </div>
+        <label for="check" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <input type="checkbox" id="check">
+        <ul class="point">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="whole">
+    <div class="container">
+            <h1 id="heading">Hello,I'm</h1> 
+            <h1 id="name">Avaneesh Pandey
+                <p id="do">Learning WebDev</p>  
+            </h1>
+
+    </div>
+    <div id="about">
+        <div class="about-text">
+            <p>About Me</p>
+            <p>Devolper & Designer</p>
+            <p>Hello,My name is Avaneesh Pandey. I am a Devolper and also a Designer.If you have asany Project or if you want make a software for your bisnes conatact me.I make as soon as possibale.You really like my work,if you don&#8217;t i change this until you like I give you seticfaction result.</p>
+            <p>I am a Devolper and also a Designer.If you have asany Project or if you want make a software for your bussniess conatact me.I make your project as soon as possible.</p>
+            </div>
+    </div>
+    <div id="portfolio">
+        <h1>Portfolio</h1>
+        <div class="photo">
+            <img src="./style/3/img1.jpg" alt="" srcset="">
+            <img src="./style/3/img2.jpg" alt="" srcset="">
+            <img src="./style/3/img3.jpg" alt="" srcset="">
+            <img src="./style/3/img4.jpg" alt="" srcset="">
+            <img src="./style/3/img5.jpg" alt="" srcset="">
+        </div>
+    </div>
+    <div id="contact">
+        <h1>Contact</h1>
+        <p>If You Have Any Project In Your Mind ?</p>
+        <button>Contact me</button>
+    </div>  
+</section>`;
+
+
+
+    document.getElementById("home").insertAdjacentHTML("afterbegin", bdycontain);
+    document.querySelectorAll(".navbar")[1].remove();
+    document.querySelectorAll(".whole")[1].remove();
+    document.querySelector("#footer").remove();
   }
 
 }

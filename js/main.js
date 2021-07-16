@@ -498,7 +498,7 @@ function GetCssSheet(num) {
         <div class="portfolio-content">
             <div class="gallery">
                 <img src="./style/1/service1.PNG" alt="" >
-                <img src="./style/1/service2.PNG" alt="" >
+                <img src="./style/1/service2.png" alt="" >
                 <img src="./style/1/service3.PNG" alt="" >
                 <img src="./style/1/service4.PNG" alt="" >
                 <img src="./style/1/service5.PNG" alt="" >

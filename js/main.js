@@ -1,7 +1,7 @@
-// const num= Math.floor(Math.random()*4);
+const num= Math.floor(Math.random()*4);
 
 // document.getElementById('css_sheet').setAttribute('href',`${num}.css`);
-const num = 1;
+// const num = 0;
 
 function GetCssSheet(num) {
   if (num === 0) {
@@ -674,7 +674,7 @@ function GetCssSheet(num) {
             <li>
                 <a href="#Home">Home</a>
                 <br>
-                <a href="#about">About</a>
+                <a href="#aboutm">About</a>
                 <br>
                 <a href="#Portfolio">Portfolio</a>
                 <br>
@@ -712,13 +712,14 @@ function GetCssSheet(num) {
             <div class="right ">
                 <h6>Atharva Tayshete</h6>
                 <h1>Hi I'm a <span>Web developer</span></h1>
-                <p>I am Atharva, 18 ,currently studying in IIT Indore for my B.Tech in Electrical Engineering(currently entering 2nd year). Currently I am beginning my journey in this field of web design and programming and hopeful of doing more projects in future. As of now, I have completed my basics in front end web development.
+                <p>I am Atharva, 18 ,currently studying in IIT Indore for my B.Tech in Electrical Engineering(currently entering 2nd year).<br><br>
+                Currently I am beginning my journey in this field of web design and programming and hopeful of doing more projects in future. As of now, I have completed my basics in front end web development.
                 <br><br>
                 Till the end of my 2nd year,I aim to learn Arduino,complete front & back end programming and start Competitive Programming as well. For more details about my academics, you may download my CV from the link below.
                 </p>
                 <div>
-                    <button class="btn btn-secondary"><a href="https://drive.google.com" target="_blank"
-                            style="text-decoration: none;color: var(--dark);">Download My CV</a></button>
+                    <a href="https://drive.google.com" class="btn btn-primary" target="_blank"
+                            style="text-decoration: none;">Download My CV</a>
                 </div>
                 <br>
             </div>
@@ -729,14 +730,17 @@ function GetCssSheet(num) {
             <!-- <div class="flex-1">
                 <img class="about-me-img" src="./style/2/icon2.png" alt="">
             </div> -->
-            <div class="flex-1">
+            <div class="flex-1" id="aboutm">
                 <h1>
                     About <span style="color: var(--primary);">Me</span>
                 </h1>
                 <h3>Hi I'm Atharva Tayshete</h3>
                 <p>
-                    I was born on 13th December 2002. Born and brought up in Ratnagiri,a town in Maharashtra. I shifted to Mumbai after passing 10th,with 96.6%, for my further studies. I passed my 12th with 92% and further landed in IIT Indore,Electrical Branch by virtue of AIR 2799 in Jee(Adv) 2020. <br>
-                    I am able to speak 3 languages fluently so far viz. English,Marathi,Hindi with expecting to add some more in the future. Apart from that,I have qualified PRMO twice-in 2018 & 2019 and excelled with a AIR 2359 in JEE(Main) 2020.
+                   Born: 13th December 2002 in Ratnagiri , Maharashtra <br>
+                   Marks in 10th & 12th : 96.6% & 92% respectively<br>
+                   Language : English | Hindi | Marathi<br><br>
+                   Academic Excellence : AIR 2359 in JEE(Main) 2020 , AIR 2799 in JEE(Advanced) 2020 , Qualified PRMO in 2018 & 2019.<br>
+                   Current progres : 8.61 CPI with Academic Standing - I
                 </p>
                 <div class="social">
                     <a href="https://in.linkedin.com/in/atharva-tayshete-028622169" target="_blank"><img
@@ -759,31 +763,30 @@ function GetCssSheet(num) {
     <section class="services" id="Portfolio">
         <div class="container">
             <h1 class="section-heading" id="pure">My <span>Portfolio</span></h1>
-            <p>Projects done by me</p>
             <div class="card-wrapper">
-                <div class="card">
+                <div class="card ">
                     <h2>Graphic Design</h2>
-                    <img src="./style/2/gd1.png" alt="">
+                    <img src="./style/2/gd1.png" class="zoom" alt="">
                 </div>
-                <div class="card">
+                <div class="card ">
                     <h2>Web Design</h2>
-                    <img src="./style/2/wd3.jpg" alt="">
+                    <img src="./style/2/wd3.jpg" class="zoom" alt="">
                 </div>
-                <div class="card">
+                <div class="card ">
                     <h2>GPS Tracking</h2>
-                    <img src="./style/2/tobias-rademacher-p79nyt2CUj4-unsplash.jpg" alt="">
+                    <img src="./style/2/tobias-rademacher-p79nyt2CUj4-unsplash.jpg" class="zoom" alt="">
                 </div>
-                <div class="card">
+                <div class="card ">
                     <h2>Android App</h2>
-                    <img src="./style/2/aa1.jpg" alt="">
+                    <img src="./style/2/aa1.jpg" class="zoom" alt="">
                 </div>
-                <div class="card">
+                <div class="card ">
                     <h2>LMS</h2>
-                    <img src="./style/2/lms1.png" alt="">
+                    <img src="./style/2/lms1.png" class="zoom" alt="">
                 </div>
-                <div class="card">
+                <div class="card ">
                     <h2>Chat bot</h2>
-                    <img src="./style/2/cb1.jpg" alt="">
+                    <img src="./style/2/cb1.jpg" class="zoom" alt="">
                 </div>
             </div>
         </div>
@@ -828,7 +831,6 @@ function GetCssSheet(num) {
     </section>
     <footer>
         <div class="footer-logo">
-            <a href="#"> AT's Personal Website </a>
         </div>
         <!-- <div class="footer-socials">
             <a href="https://in.linkedin.com/in/atharva-tayshete-028622169" target="_blank"><img src="./style/2/iconmonstr-linkedin-3.svg" alt=""></a>

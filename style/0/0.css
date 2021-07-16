@@ -799,6 +799,8 @@ header{
 footer{
     text-align:center;
     background-color:#272727;   
+    font-size: 2rem;
+    padding:1vh; 
 }
 
 

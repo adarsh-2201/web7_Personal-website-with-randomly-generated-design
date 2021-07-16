@@ -138,6 +138,9 @@ section .title::after{
     cursor: pointer;
     display: none;
 }
+.menu-btn .fas{
+    padding-right: 4rem;
+}
 
 /* CSS Styling related to scroll-up button */
 .scroll-up-btn{
@@ -289,6 +292,7 @@ section .title::after{
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
+    min-height: 275px;
 }
 .services .serv-content .card:hover{
     background: crimson;

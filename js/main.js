@@ -1,7 +1,7 @@
-const num= Math.floor(Math.random()*4);
+// const num= Math.floor(Math.random()*4);
 
 // document.getElementById('css_sheet').setAttribute('href',`${num}.css`);
-// const num = 0;
+const num = 1;
 
 function GetCssSheet(num) {
   if (num === 0) {
@@ -493,7 +493,7 @@ function GetCssSheet(num) {
 
 <!-- Portfolio section start -->
 <section class="portfolio" id="portfolio">
-    <div class="max-width">
+    <div class="max-w">
         <h2 class="title">PORTFOLIO</h2>
         <div class="portfolio-content">
             <div class="gallery">
@@ -903,7 +903,7 @@ function GetCssSheet(num) {
 </header>
 <section class="whole">
     <div class="container">
-            <h1 id="heading">Hello,I'm</h1> 
+            <h1 id="heading"><p>Hello,I'm</p></h1> 
             <h1 id="name">Avaneesh Pandey
                 <p id="do">Learning WebDev</p>  
             </h1>

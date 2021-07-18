@@ -402,6 +402,7 @@ section .title::after{
     flex-wrap: wrap;
     justify-content: space-around;
     box-sizing: border-box;
+    width:99%;
 }
 .gallery img{
     width: 360px;

@@ -411,6 +411,9 @@ section .title::after{
     border: 2px solid crimson;
     border-radius: 20px;
 }
+.gallery img:hover{
+    box-shadow: 3px 3px 3px 3px crimson;
+}
 .portfolio .title::after{
     color: crimson;
     content: "my recent works";

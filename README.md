@@ -72,8 +72,7 @@ ___
 ## **Download Links** : 
 You can access our project form your local machine !
 >https : https://github.com/Dev-Daftari/IITISoC--Personal-Website-Project---Team-2.git
- </br>
->ssh : git@github.com:Dev-Daftari/IITISoC--Personal-Website-Project---Team-2.git
+
 ```bash
     git clone https://github.com/Dev-Daftari/IITISoC--Personal-Website-Project---Team-2.git
 ```

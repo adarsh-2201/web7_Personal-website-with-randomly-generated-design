@@ -60,13 +60,13 @@ ___
 ___
 ## **Preview** :
 
-![0.css](./previews/0home.png)
+![0.css](./previews/Dev.jfif)
 ___
-![1.css](./previews/1home.png)
+![1.css](./previews/Ashish.jfif)
 ___
-![2.css](./previews/2home.png)
+![2.css](./previews/Atharva.jfif)
 ___
-![3.css](./previews/3home.png)
+![3.css](./previews/Avaneesh.png)
 ___
 
 ## **Download Links** : 

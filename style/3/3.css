@@ -26,7 +26,7 @@ background-size: cover;
 position: relative;
 animation: appear 3s;
 top: 4rem;
-/* left: 200%; */
+left: -10%;
 font-size: 45px;
 font-weight: lighter;
 }
@@ -34,7 +34,7 @@ font-weight: lighter;
  z-index: -1;
 position:relative;
 top: 4rem;
-left: 30%;
+left: 22%;
 font-size: 25px
 }
 /* #do {
@@ -317,12 +317,12 @@ nav ul{
         padding: 5px 10px;
     }
     .photo img{
-        width: 163px;
-        height: 200px;
+        width: 120px;
+        height: 130px;
         margin: 10px;
     }
     #contact{
-        top:100rem;
+        top:87rem;
     }
     #contact p{
         font-size:20px;

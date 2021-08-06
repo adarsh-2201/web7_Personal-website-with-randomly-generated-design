@@ -222,7 +222,10 @@ section.services {
 }
 
 .card {
+    display: flex;
     color: var(--pure);
+    align-items: center;
+    flex-direction: column;
 }
 
 section.services .card-wrapper {

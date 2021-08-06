@@ -70,7 +70,7 @@ ___
 ___
 
 ## **Download Links** : 
-You can access our project form your local machine !
+You can access our project from your local machine !
 >https : https://github.com/Dev-Daftari/IITISoC--Personal-Website-Project---Team-2.git
 
 ```bash

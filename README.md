@@ -71,10 +71,10 @@ ___
 
 ## **Download Links** : 
 You can access our project from your local machine !
->https : https://github.com/Dev-Daftari/IITISoC--Personal-Website-Project---Team-2.git
+>https : https://github.com/Dev-Daftari/web7_Personal-website-with-randomly-generated-design.git
 
 ```bash
-    git clone https://github.com/Dev-Daftari/IITISoC--Personal-Website-Project---Team-2.git
+    git clone https://github.com/Dev-Daftari/web7_Personal-website-with-randomly-generated-design.git
 ```
 ___
 # Thank You for your time !

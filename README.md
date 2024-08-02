@@ -1,5 +1,5 @@
 # IITISoC--Personal-Website-Project---Team-2
->The link to our project : https://personal-website-iitisoc.herokuapp.com/
+>The link to our project : https://personal-website-ten-teal.vercel.app/
 ___
 
 ## **Team** :
